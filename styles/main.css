@@ -1,0 +1,644 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 50;
+    border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+    padding: 1rem 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fbbf24;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-circle {
+    width: 48px;
+    height: 48px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+.cart-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.cart-btn:hover {
+    color: #fbbf24;
+}
+
+.cart-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 1px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #451a03, #78350f, #92400e);
+}
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+    background-image: url('https://images.unsplash.com/photo-1700448293876-07dca826c161?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaG9jb2xhdGUlMjBjYWtlJTIwc2xpY2V8ZW58MXx8fHwxNzU4MDM1NjIxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 0 1rem;
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    color: white;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.hero-highlight {
+    color: #fbbf24;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
+.floating-cake {
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.2;
+}
+
+.floating-cake-1 {
+    top: 5rem;
+    right: 2.5rem;
+    width: 6rem;
+    height: 6rem;
+}
+
+.floating-cake-2 {
+    bottom: 5rem;
+    left: 2.5rem;
+    width: 8rem;
+    height: 8rem;
+}
+
+.floating-cake img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Featured Cakes Section */
+.featured-cakes {
+    padding: 5rem 0;
+    background: #fffbeb;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #78350f;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.section-header p {
+    font-size: 1.125rem;
+    color: #92400e;
+    max-width: 32rem;
+    margin: 0 auto;
+}
+
+.cakes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.cake-card {
+    background: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #fbbf24;
+    transition: all 0.3s ease;
+    group: true;
+}
+
+.cake-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.cake-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.cake-image {
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.cake-card:hover .cake-image {
+    transform: scale(1.05);
+}
+
+.cake-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cake-card:hover .cake-overlay {
+    opacity: 1;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    background: #d97706;
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background: #b45309;
+}
+
+.cake-content {
+    padding: 1.5rem;
+}
+
+.cake-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.cake-header h3 {
+    font-size: 1.25rem;
+    color: #78350f;
+    font-weight: 600;
+}
+
+.cake-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #d97706;
+}
+
+.cake-description {
+    color: #92400e;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+/* About Section */
+.about {
+    padding: 5rem 0;
+    background: white;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #78350f;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.about-description {
+    font-size: 1.125rem;
+    color: #92400e;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.feature-icon {
+    width: 3rem;
+    height: 3rem;
+    background: #fffbeb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #d97706;
+}
+
+.feature-content h3 {
+    font-size: 1.25rem;
+    color: #78350f;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.feature-content p {
+    color: #92400e;
+}
+
+.about-image {
+    position: relative;
+}
+
+.image-container {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.image-container img {
+    width: 100%;
+    height: 24rem;
+    object-fit: cover;
+}
+
+.floating-card {
+    position: absolute;
+    bottom: -2rem;
+    left: -2rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #fffbeb;
+    text-align: center;
+}
+
+.card-number {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #d97706;
+}
+
+.card-text {
+    color: #92400e;
+    font-size: 0.875rem;
+}
+
+/* Footer */
+.footer {
+    background: #451a03;
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.footer-section h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer-logo .logo-circle {
+    margin-right: 0.75rem;
+}
+
+.brand-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.footer-description {
+    color: #fbbf24;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #92400e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+    background: #b45309;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #fbbf24;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.contact-info {
+    margin-bottom: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: #fbbf24;
+}
+
+.contact-item svg {
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+}
+
+.hours-card {
+    background: #92400e;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.footer-bottom {
+    border-top: 1px solid #92400e;
+    padding-top: 2rem;
+    text-align: center;
+    color: #fbbf24;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-left, .nav-right {
+        display: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .floating-cake-1, .floating-cake-2 {
+        display: none;
+    }
+    
+    .floating-card {
+        position: static;
+        margin-top: 1rem;
+        transform: none;
+    }
+    
+    .cakes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .about-text h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cake-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Hover effects */
+.cake-card:hover {
+    transform: translateY(-5px);
+}
+
+.add-to-cart-btn:active {
+    transform: scale(0.98);
+}
+
+.nav-link:active,
+.cart-btn:active {
+    transform: scale(0.95);
+}
