@@ -711,13 +711,7 @@ window.addEventListener('scroll', debounce(() => {
 }, 10));
 
 // Parallax effect for hero background
-window.addEventListener('scroll', debounce(() => {
-    const heroBackground = document.querySelector('.hero-background');
-    if (heroBackground) {
-        const scrolled = window.pageYOffset;
-        heroBackground.style.transform = `translateY(${scrolled * 0.5}px)`;
-    }
-}, 10));
+
 
 // Utility functions
 function debounce(func, wait) {
