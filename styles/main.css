@@ -134,7 +134,9 @@ body {
     position: absolute;
     right: auto;
     left: auto;
+    bottom: 2%;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     opacity: 0.6;
 }
