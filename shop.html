@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Dreams Bakery - Shop</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/shop.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">🧁</div>
+                <span class="logo-text">Sweet Dreams Bakery</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link active">Shop</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                <a href="#" class="nav-link cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    Cart (<span id="cart-count">0</span>)
+                </a>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        
+        <div class="mobile-menu">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="shop.html" class="mobile-link">Shop</a>
+            <a href="about.html" class="mobile-link">About</a>
+            <a href="faqs.html" class="mobile-link">FAQs</a>
+            <a href="#" class="mobile-link">Cart (0)</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Cake Collection</h1>
+            <p>Discover our handcrafted cakes made with love</p>
+        </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="shop-content">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Filters Sidebar -->
+                <aside class="filters-sidebar">
+                    <div class="filter-section">
+                        <h3><i class="fas fa-filter"></i> Filters</h3>
+                        
+                        <div class="filter-group">
+                            <label>Search</label>
+                            <div class="search-box">
+                                <i class="fas fa-search"></i>
+                                <input type="text" id="search-input" placeholder="Search cakes...">
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <label>Categories</label>
+                            <div class="category-filters">
+                                <button class="category-btn active" data-category="all">All Cakes</button>
+                                <button class="category-btn" data-category="birthday">Birthday Cakes</button>
+                                <button class="category-btn" data-category="wedding">Wedding Cakes</button>
+                                <button class="category-btn" data-category="cupcakes">Cupcakes</button>
+                                <button class="category-btn" data-category="custom">Custom Cakes</button>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <main class="products-main">
+                    <div class="products-header">
+                        <p id="results-count">Showing all products</p>
+                    </div>
+
+                    <div class="products-grid" id="products-grid" class="hot-badge">
+                        <!-- Products will be loaded here by JavaScript -->
+                    </div>
+
+                    <div id="no-results" class="no-results hidden">
+                        <p>No cakes found matching your criteria.</p>
+                        <button onclick="clearFilters()" class="btn btn-secondary">Clear filters</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">🧁</div>
+                        <span class="logo-text">Sweet Dreams Bakery</span>
+                    </div>
+                    <p>Creating magical moments with handcrafted cakes made with love and the finest ingredients.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>123 Sweet Street</li>
+                        <li>Bakery District, BD 12345</li>
+                        <li>(555) 123-CAKE</li>
+                        <li>orders@sweetdreamsbakery.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Business Hours</h3>
+                    <ul>
+                        <li>Monday - Saturday: 8AM - 7PM</li>
+                        <li>Sunday: 9AM - 5PM</li>
+                        <li>Closed on major holidays</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sweet Dreams Bakery. All rights reserved. Made with ❤️ for sweet moments.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/shop.js"></script>
+</body>
+</html>

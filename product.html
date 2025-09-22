@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Dreams Bakery - Product</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/product.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">🧁</div>
+                <span class="logo-text">Sweet Dreams Bakery</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                <a href="#" class="nav-link cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    Cart (<span id="cart-count">0</span>)
+                </a>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        
+        <div class="mobile-menu">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="shop.html" class="mobile-link">Shop</a>
+            <a href="about.html" class="mobile-link">About</a>
+            <a href="faqs.html" class="mobile-link">FAQs</a>
+            <a href="#" class="mobile-link">Cart (0)</a>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> /
+            <a href="shop.html">Shop</a> /
+            <span id="product-name-breadcrumb">Classic Chocolate Delight</span>
+        </div>
+    </nav>
+
+    <!-- Product Details -->
+    <section class="product-details">
+        <div class="container">
+            <div class="product-layout">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="main-product-image" src="https://images.unsplash.com/photo-1555607124-8531c7c702d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaG9jb2xhdGUlMjBjYWtlJTIwYmlydGhkYXl8ZW58MXx8fHwxNzU4NTE4OTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Product Image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <button class="thumbnail active" data-image="https://images.unsplash.com/photo-1555607124-8531c7c702d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaG9jb2xhdGUlMjBjYWtlJTIwYmlydGhkYXl8ZW58MXx8fHwxNzU4NTE4OTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral">
+                            <img src="https://images.unsplash.com/photo-1555607124-8531c7c702d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaG9jb2xhdGUlMjBjYWtlJTIwYmlydGhkYXl8ZW58MXx8fHwxNzU4NTE4OTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="View 1">
+                        </button>
+                        <button class="thumbnail" data-image="https://images.unsplash.com/photo-1654546518361-eef83e447521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2YW5pbGxhJTIwY2FrZSUyMGxheWVyc3xlbnwxfHx8fDE3NTg1MTQ3OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral">
+                            <img src="https://images.unsplash.com/photo-1654546518361-eef83e447521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2YW5pbGxhJTIwY2FrZSUyMGxheWVyc3xlbnwxfHx8fDE3NTg1MTQ3OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="View 2">
+                        </button>
+                        <button class="thumbnail" data-image="https://images.unsplash.com/photo-1667298216085-b0bf5a2e1944?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJhd2JlcnJ5JTIwY2FrZSUyMHNsaWNlfGVufDF8fHx8MTc1ODQ4NTQ2MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral">
+                            <img src="https://images.unsplash.com/photo-1667298216085-b0bf5a2e1944?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJhd2JlcnJ5JTIwY2FrZSUyMHNsaWNlfGVufDF8fHx8MTc1ODQ4NTQ2MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="View 3">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div class="product-header">
+                        <h1 id="product-title">Classic Chocolate Delight</h1>
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-text">4.9 (127 reviews)</span>
+                        <span class="in-stock">In Stock</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="current-price" id="current-price">$45</span>
+                        <span class="original-price">$55</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p>Indulge in our signature Classic Chocolate Delight - a rich, moist chocolate cake layered with silky chocolate ganache and topped with chocolate shavings. Made with premium Belgian cocoa and the finest ingredients, this cake is perfect for any celebration.</p>
+                    </div>
+
+                    <!-- Size Selection -->
+                    <div class="size-selection">
+                        <h3>Size</h3>
+                        <div class="size-options">
+                            <button class="size-option" data-size="small" data-price="35" data-serves="4-6 people">
+                                <div>
+                                    <span class="size-name">Small (6")</span>
+                                    <span class="serves">4-6 people</span>
+                                </div>
+                                <span class="size-price">$35</span>
+                            </button>
+                            <button class="size-option active" data-size="medium" data-price="45" data-serves="8-10 people">
+                                <div>
+                                    <span class="size-name">Medium (8")</span>
+                                    <span class="serves">8-10 people</span>
+                                </div>
+                                <span class="size-price">$45</span>
+                            </button>
+                            <button class="size-option" data-size="large" data-price="65" data-serves="12-15 people">
+                                <div>
+                                    <span class="size-name">Large (10")</span>
+                                    <span class="serves">12-15 people</span>
+                                </div>
+                                <span class="size-price">$65</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Quantity -->
+                    <div class="quantity-selection">
+                        <h3>Quantity</h3>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn" onclick="updateQuantity(-1)">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <span class="quantity-value" id="quantity">1</span>
+                            <button class="quantity-btn" onclick="updateQuantity(1)">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Add to Cart -->
+                    <div class="cart-actions">
+                        <button class="btn btn-primary add-to-cart-btn" onclick="addProductToCart()">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cart-btn-text">Add to Cart - $45</span>
+                        </button>
+                        <button class="btn btn-secondary">Buy Now</button>
+                    </div>
+
+                    <!-- Delivery Info -->
+                    <div class="delivery-info">
+                        <p><i class="fas fa-truck"></i> <strong>Estimated Delivery:</strong> 2-3 business days</p>
+                    </div>
+
+                    <!-- Ingredients -->
+                    <div class="ingredients">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>Premium Belgian cocoa powder</li>
+                            <li>Fresh farm eggs</li>
+                            <li>Pure vanilla extract</li>
+                            <li>Organic butter</li>
+                            <li>Dark chocolate ganache</li>
+                            <li>Chocolate shavings</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review">
+                    <div class="review-header">
+                        <h4>Sarah M.</h4>
+                        <span>2 weeks ago</span>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Absolutely amazing! The chocolate flavor is so rich and the texture is perfect. Will definitely order again.</p>
+                </div>
+                
+                <div class="review">
+                    <div class="review-header">
+                        <h4>Mike R.</h4>
+                        <span>1 month ago</span>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Ordered this for my wife's birthday. She was thrilled! The cake looked beautiful and tasted even better.</p>
+                </div>
+                
+                <div class="review">
+                    <div class="review-header">
+                        <h4>Emily K.</h4>
+                        <span>3 weeks ago</span>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>Great cake overall. Very moist and flavorful. The presentation was lovely too.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2>You Might Also Like</h2>
+            <div class="related-grid">
+                <div class="related-product">
+                    <div class="related-image">
+                        <img src="https://images.unsplash.com/photo-1654546518361-eef83e447521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2YW5pbGxhJTIwY2FrZSUyMGxheWVyc3xlbnwxfHx8fDE3NTg1MTQ3OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Vanilla Layer Cake">
+                    </div>
+                    <div class="related-info">
+                        <h3>Vanilla Layer Cake</h3>
+                        <div class="related-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.6</span>
+                        </div>
+                        <div class="related-footer">
+                            <span class="related-price">$38</span>
+                            <button class="btn btn-small">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="related-product">
+                    <div class="related-image">
+                        <img src="https://images.unsplash.com/photo-1667298216085-b0bf5a2e1944?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJhd2JlcnJ5JTIwY2FrZSUyMHNsaWNlfGVufDF8fHx8MTc1ODQ4NTQ2MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Fresh Strawberry Cake">
+                    </div>
+                    <div class="related-info">
+                        <h3>Fresh Strawberry Cake</h3>
+                        <div class="related-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                        <div class="related-footer">
+                            <span class="related-price">$52</span>
+                            <button class="btn btn-small">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">🧁</div>
+                        <span class="logo-text">Sweet Dreams Bakery</span>
+                    </div>
+                    <p>Creating magical moments with handcrafted cakes made with love and the finest ingredients.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>123 Sweet Street</li>
+                        <li>Bakery District, BD 12345</li>
+                        <li>(555) 123-CAKE</li>
+                        <li>orders@sweetdreamsbakery.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Business Hours</h3>
+                    <ul>
+                        <li>Monday - Saturday: 8AM - 7PM</li>
+                        <li>Sunday: 9AM - 5PM</li>
+                        <li>Closed on major holidays</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sweet Dreams Bakery. All rights reserved. Made with ❤️ for sweet moments.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/product.js"></script>
+</body>
+</html>

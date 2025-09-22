@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Dreams Bakery - FAQs</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/faqs.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">🧁</div>
+                <span class="logo-text">Sweet Dreams Bakery</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="faqs.html" class="nav-link active">FAQs</a>
+                <a href="#" class="nav-link cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    Cart (<span id="cart-count">0</span>)
+                </a>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        
+        <div class="mobile-menu">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="shop.html" class="mobile-link">Shop</a>
+            <a href="about.html" class="mobile-link">About</a>
+            <a href="faqs.html" class="mobile-link">FAQs</a>
+            <a href="#" class="mobile-link">Cart (0)</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about our cakes, ordering process, and services</p>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="faq-content">
+        <div class="container">
+            <!-- FAQ Categories -->
+            <div class="faq-categories">
+                <!-- Ordering & Pricing -->
+                <div class="faq-category">
+                    <div class="category-header">
+                        <h2>Ordering & Pricing</h2>
+                    </div>
+                    <div class="faq-items">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>How far in advance should I place my order?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We recommend placing orders at least 48-72 hours in advance for custom cakes. For wedding cakes or large events, please order 1-2 weeks ahead. Same-day orders may be available for our signature cakes, subject to availability.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>What are your pricing ranges?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our cakes start at $35 for small 6-inch cakes and can range up to $200+ for elaborate custom designs. Wedding cakes typically start at $150. Pricing depends on size, complexity, and decorations. Contact us for a detailed quote.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Do you offer discounts for large orders?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes! We offer volume discounts for orders of 10+ items or events with multiple cakes. Corporate customers and repeat clients also enjoy special pricing. Contact us to discuss your specific needs.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>What payment methods do you accept?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We accept cash, credit cards (Visa, MasterCard, American Express), and digital payments through PayPal and Venmo. A 50% deposit is required for custom orders over $100.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flavors & Customization -->
+                <div class="faq-category">
+                    <div class="category-header">
+                        <h2>Flavors & Customization</h2>
+                    </div>
+                    <div class="faq-items">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>What cake flavors do you offer?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We offer over 20 flavors including chocolate, vanilla, strawberry, red velvet, lemon, carrot, and seasonal specialties. We can also create custom flavors upon request. Ask about our flavor sampling service!</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Can you accommodate dietary restrictions?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Absolutely! We offer gluten-free, sugar-free, and vegan options. We also accommodate nut allergies and other dietary needs. Please inform us of any restrictions when placing your order so we can ensure safe preparation.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>How custom can my cake design be?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Very custom! Our skilled decorators can create almost any design you can imagine. From cartoon characters to company logos, intricate flowers to architectural replicas - if you can dream it, we can likely create it.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Can I bring my own design or photo?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes! We love working with customer-provided designs, photos, or inspiration images. Our team will work with you to recreate or adapt the design to work perfectly as a cake.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Delivery & Pickup -->
+                <div class="faq-category">
+                    <div class="category-header">
+                        <h2>Delivery & Pickup</h2>
+                    </div>
+                    <div class="faq-items">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Do you offer delivery?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, we offer delivery within a 25-mile radius of our bakery. Delivery fees start at $10 for local areas and increase based on distance. We also offer white-glove setup service for wedding cakes and large events.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>What are your pickup hours?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Pickup is available during our regular business hours: Monday-Saturday 8AM-7PM, Sunday 9AM-5PM. We can also arrange after-hours pickup for special events with advance notice.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>How should I transport my cake?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We provide sturdy cake boxes and detailed transport instructions. Keep cakes in air-conditioned vehicles, drive carefully, and refrigerate upon arrival if not serving immediately. We're happy to demonstrate proper handling techniques.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Storage & Freshness -->
+                <div class="faq-category">
+                    <div class="category-header">
+                        <h2>Storage & Freshness</h2>
+                    </div>
+                    <div class="faq-items">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>How long do your cakes stay fresh?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our cakes are best enjoyed within 2-3 days when stored properly. Buttercream cakes should be refrigerated and brought to room temperature 30 minutes before serving. Fondant cakes can be stored at room temperature.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Can I freeze my cake?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes! Our cakes freeze beautifully for up to 3 months. Wrap tightly in plastic wrap and store in an airtight container. Thaw in the refrigerator overnight and bring to room temperature before serving.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>How should I store leftover cake?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Store leftover cake covered in the refrigerator for up to 5 days. Buttercream cakes should always be refrigerated, while fondant cakes can be stored at room temperature for 1-2 days if the weather isn't too warm or humid.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-help">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h2>Still Have Questions?</h2>
+                    <p>Can't find what you're looking for? Our friendly team is here to help!</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>(555) 123-CAKE</p>
+                                <small>Mon-Sat: 8AM-7PM</small>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>info@sweetdreamsbakery.com</p>
+                                <small>We respond within 24 hours</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popular Questions -->
+            <div class="popular-questions">
+                <h2>Popular Quick Questions</h2>
+                <div class="quick-questions-grid">
+                    <div class="quick-question">
+                        <h3>What's your most popular cake?</h3>
+                        <p>Our Classic Chocolate Delight is our bestseller, followed closely by our Red Velvet and Vanilla Bean cakes.</p>
+                    </div>
+                    <div class="quick-question">
+                        <h3>Do you make cupcakes?</h3>
+                        <p>Yes! We offer cupcakes in all our cake flavors, perfect for parties, offices, or when you want individual portions.</p>
+                    </div>
+                    <div class="quick-question">
+                        <h3>Can I schedule a consultation?</h3>
+                        <p>Absolutely! We offer free consultations for custom cakes over $75. Call us to schedule an appointment.</p>
+                    </div>
+                    <div class="quick-question">
+                        <h3>Do you cater events?</h3>
+                        <p>Yes, we provide full dessert catering for weddings, corporate events, and private parties of all sizes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="faq-cta">
+                <h2>Ready to Order?</h2>
+                <p>Browse our selection of delicious cakes or contact us for a custom creation</p>
+                <div class="cta-buttons">
+                    <a href="shop.html" class="btn btn-primary">Browse Cakes</a>
+                    <a href="about.html" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">🧁</div>
+                        <span class="logo-text">Sweet Dreams Bakery</span>
+                    </div>
+                    <p>Creating magical moments with handcrafted cakes made with love and the finest ingredients.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>123 Sweet Street</li>
+                        <li>Bakery District, BD 12345</li>
+                        <li>(555) 123-CAKE</li>
+                        <li>orders@sweetdreamsbakery.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Business Hours</h3>
+                    <ul>
+                        <li>Monday - Saturday: 8AM - 7PM</li>
+                        <li>Sunday: 9AM - 5PM</li>
+                        <li>Closed on major holidays</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sweet Dreams Bakery. All rights reserved. Made with ❤️ for sweet moments.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/faqs.js"></script>
+</body>
+</html>
