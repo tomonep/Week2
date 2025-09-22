@@ -7,7 +7,7 @@ const cakes = [
         name: "Classic Chocolate Delight",
         price: 45,
         category: "birthday",
-        image: "https://images.unsplash.com/photo-1555607124-8531c7c702d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaG9jb2xhdGUlMjBjYWtlJTIwYmlydGhkYXl8ZW58MXx8fHwxNzU4NTE4OTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        image: "https://images.unsplash.com/photo-1695605302591-e69ec4fa6cc5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGNob2NvbGF0ZSUyMGRlbGlnaHR8ZW58MHx8MHx8fDA%3D",
         rating: 4.9,
         description: "Rich chocolate layers with chocolate ganache"
     },

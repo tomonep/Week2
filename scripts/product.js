@@ -10,8 +10,8 @@ const productData = {
     name: "Classic Chocolate Delight",
     basePrice: 45,
     images: [
-        "https://images.unsplash.com/photo-1555607124-8531c7c702d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaG9jb2xhdGUlMjBjYWtlJTIwYmlydGhkYXl8ZW58MXx8fHwxNzU4NTE4OTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1654546518361-eef83e447521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2YW5pbGxhJTIwY2FrZSUyMGxheWVyc3hlbnwxfHx8fDE3NTg1MTQ3OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "https://images.unsplash.com/photo-1695649912819-67853082a240?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hvY29sYXRlJTIwZGVsaWdodHxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1695605302591-e69ec4fa6cc5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGNob2NvbGF0ZSUyMGRlbGlnaHR8ZW58MHx8MHx8fDA%3D",
         "https://images.unsplash.com/photo-1667298216085-b0bf5a2e1944?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJhd2JlcnJ5JTIwY2FrZSUyMHNsaWNlfGVufDF8fHx8MTc1ODQ4NTQ2MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     ]
 };
